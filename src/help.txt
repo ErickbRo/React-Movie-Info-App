@@ -1,0 +1,36 @@
+            {
+                movies?.length > 0
+                ?(
+                    <div className="container">
+                        {
+                            movies.map((movie) =>{
+                                <MovieCard movie={ movie} />
+                            })
+                        }
+                    </div>
+                ) : (
+                <div>
+                    <h2>No Movies Found</h2>
+                </div>
+                )
+            }
+
+<div className="movie">
+                    <div>
+                    <p>
+                        {movie1.Year}
+                    </p>
+                </div>
+
+                <div>
+                    <img src={movie1.Poster !=='N/A' ? movie1.Poster : 'https://images.app.goo.gl/se6WDBnS87CtZoav8'} 
+                        alt={movie1.Title}
+                    />
+                </div>
+
+                <div>
+                    <span>{movie1.Type}</span>
+                    <h3>
+                        {movie1.Title}
+                    </h3>
+                </div>
